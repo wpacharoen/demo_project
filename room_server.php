@@ -114,7 +114,7 @@
 					<div class="" style="background-color:#666;" align="center">
 						<div id="uploadfile" class="" style="position:relation;background-color:#666; width:100%; height:600px;">
 							<div class="center" style="width:500px;">
-								<a href="#" class="btnfile" onclick="gotofile()">Upload file PDF only</a>
+								<a href="#" class="btnfile" onclick="gotofile()">Upload presentation (.pdf)</a>
 								<form id="uploadPDFtoserver" action="uploadPDF.php" method="post" enctype="multipart/form-data">
 									<input type="file" name="fileToUpload" id="fileToUpload" style="display:none;" onchange="submitform()">
 									<input type="submit" id="submitgo" value="Submit" style="display:none;"/>
@@ -171,7 +171,7 @@
 					<div class="" style="background-color:#777; padding:10px; border-radius:10px;">Your file</div>
 					<hr style="border-color:#777;">
 					<div class="" style="padding:10px; background-color:#666;" align="left">
-					  <img src="img/Treetog-I-Documents.ico" alt="" width="25px"> All File "PDF" that you upload
+					  <img src="img/Treetog-I-Documents.ico" alt="" width="25px"> All presentations
 						<div class="result"  style="padding-left:50px;"></div>
 					</div>
         </div>
@@ -189,7 +189,7 @@
 				<div class="scrollbar chatget" id="style-1" style="background-color:#555; height:260px; overflow-y: scroll; ">
 					<div class="force-overflow" id="chathtml">
 						<div class="" style="background-color:#333;margin-top:10px;padding:20px; border-radius:10px; color:#fff;" align="center">
-							!!! Not message chat
+							No message
 						</div>
 					</div>
 				</div>

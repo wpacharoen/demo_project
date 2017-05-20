@@ -12,13 +12,6 @@
   .no-js #loader { display: none;  }
   .js #loader { display: block; position: absolute; left: 100px; top: 0; }
   </style>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-  <script>
-  	$(window).load(function() {
-  		$(".se-pre-con").fadeOut("slow");;
-  	});
-  </script>
 </head>
 <body>
 	<div class="se-pre-con"></div>
@@ -32,13 +25,19 @@
           <a href="room_client.php" class=" button "><i class="glyphicon glyphicon-education"></i> Students</a><br>
           <hr style="border-color:#777;">
 					<div class="" style="background-color:#444; padding:15px; border-radius:10px;color:#fff;" align="center">
-						<h5>ข้อเเนะนำ</h5>
+						<h5>คำชี้แจง</h5>
 						<p>ปุ่ม <i class="glyphicon glyphicon-user"></i> Professor สำหรับอาจารย์ผู้สอนเท่านั้น</p>
-						<p>ปุ่ม <i class="glyphicon glyphicon-education"></i> Students สำหรับนักศึกษาหรือนักเรียนเผื่อเข้าดูการบรรยา</p>
+						<p>ปุ่ม <i class="glyphicon glyphicon-education"></i> Students สำหรับนักศึกษาที่สนใจเข้าร่วมการบรรยาย</p>
 					</div>
         </div>
       </div>
    </div>
-
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+   <script>
+   	$(window).load(function() {
+   		$(".se-pre-con").fadeOut("slow");;
+   	});
+   </script>
 </body>
 </html>

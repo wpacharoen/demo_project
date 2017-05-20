@@ -53,7 +53,7 @@
 							</div>
 						</span>
 						<div class="center" style="color:#fff; top:50px;">
-							<label for="">Topic to day : </label><span id="topic"> - </span>
+							<label for="">Topic: </label><span id="topic"> - </span>
 						</div>
 					</div>
 					<hr style="border-color:#777;">
@@ -61,7 +61,7 @@
 						<div class="panel-body">
 							<div class="" id="loadingpdf" style="height:600px;padding-top:190px;">
 								<img src="img/logoweb.png" alt="" width="80px">
-								<label for=""> Wait form hots..</label>
+								<label for=""> Wait for host..</label>
 								<img src="img/Loading.gif" alt="" width="80px">
 							</div>
 							<canvas id="the-canvas" width="100%" style="display:none; background-color:#666;"></canvas>
@@ -74,7 +74,7 @@
 							<div class="scrollbar chatget" id="style-1" style="background-color:#555; height:400px; overflow-y: scroll; ">
 								<div class="force-overflow" id="chathtml">
 									<div class="" style="background-color:#333;margin-top:10px;padding:50px; border-radius:10px; color:#fff;" align="center">
-										!!! Not message chat
+										No message
 									</div>
 								</div>
 							</div>
