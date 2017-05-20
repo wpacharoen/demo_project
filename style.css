@@ -1,0 +1,58 @@
+.btnNaB{
+ background-color:rgba(0, 0, 0, 0.27); /* Green */
+ border: none;
+ color: #fff;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ transition: 0.5s;
+ border-radius: 10px
+}
+.btnNaB:hover{
+ background-color: rgba(0, 0, 0, 0.55); /* Green */
+ border: none;
+ color: white;
+ padding: 15px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ transition: 0.5s;
+}
+.btnfile{
+ background-color:rgba(0, 0, 0, 0.89); /* Green */
+ border: none;
+ color: #aaa;
+ padding: 15px 15px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ transition: 0.5s;
+ border-radius: 10px
+}
+.btnfile:hover{
+ background-color: rgba(0, 0, 0, 0.55); /* Green */
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ transition: 0.5s;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
