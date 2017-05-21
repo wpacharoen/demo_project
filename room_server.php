@@ -470,7 +470,8 @@
 		setInterval(function() {	 // กำหนดให้ทำงานตลอดเวลาทุกๆ 3000 มิลลิวินาที
 			if(numPagesnow){
 				console.log('slide num : '+numPagesnow);
-				microgear.publish("/billboard/slide",numPagesnow + ';' +url+';'+topicToday+';'+scale);
+				var start = new Date().getTime();
+				microgear.publish("/billboard/slide",numPagesnow + ';' +url+';'+topicToday+';'+scale+';'+start);
 				numPagesnow = '';
 			}
 		},200);

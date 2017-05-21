@@ -169,16 +169,32 @@
 	function getColor(){
 	   return '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
 	}
-
+var test = false;
 	microgear.on('message',function(topic,msg) { //ตรวจพบข้อความที่ส่งมายังอุปกรณ์
 		 var strtopic = topic.split("/");
+
 		 if(strtopic[3] == 'slide'){
 			 var data = msg.split(";");
 			 url = data[1];
 			 $('#topic').html(' '+data[2])
 			 $('#loadingpdf').hide();
 			 $('#the-canvas').fadeIn();
-			 createpdf(parseInt(data[0]),url,data[3]);
+			 if(!test){
+			 	createpdf(parseInt(data[0]),url,data[3]);
+				test = true;
+				var start = data[4];
+				var end = new Date().getTime();
+    		console.log('load milliseconds passed: ', end - start);
+
+
+			}else{
+				queueRenderPage(parseInt(data[0]));
+				var start = data[4];
+				var end = new Date().getTime();
+    		console.log('change slide milliseconds passed: ', end - start);
+
+			}
+
 		 }
 		 if(topic == '/WoodySmartDevice/billboard/chat/'+slot && strtopic[3] == 'chat'){
 			 console.log('y : '+msg);
